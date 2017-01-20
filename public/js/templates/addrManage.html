@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="css/addrManage.css">
+<div id="addr_main">
+	<div id="addr_addrList">
+		<div class="addr_addr addr_util" ng-repeat="addr in addressArr">
+			<div class="addr_addr_left fl" ng-click="toOrderConfirm(addr)">
+				<div>
+					<p class="addr_addr_left_addr" ng-bind="addr.contactor+'  '+addr.phone"></p>
+					<p class="addr_addr_left_addr" ng-bind="addr.address+addr.doorplate"></p>
+				</div>
+			</div>
+			<div class="addr_addr_right fr">
+				<div class="addr_edit" ng-click="toUpdateAddr(addr)">
+					<i></i>
+				</div>
+				<div class="addr_del" ng-click="deleteAddr($index)">
+					<i></i>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="addr_addBtn_div">
+		<button class="btn addr_addBtn" ng-click="addAddr()">新增收货地址</button>
+	</div>
+</div>

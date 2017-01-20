@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="css/personalCenter.css">
+<div class="pc_main" >
+	<div class="pc_banner">
+		<img src="img/pc_banner.png" />
+		<p class="pc_mobielPhoe" ng-bind="'您好，'+user.phone"></p>
+	</div>
+	<div class="pc_list">
+		<ul>
+			<li class="pc_orderList" ng-click="showOrders()">
+				<i class="pc_myorder"></i>
+				<span>我的订单</span>
+			</li>
+			<li class="pc_addr" ng-click="showAddresses()">
+				<i></i>
+				<span>地址管理</span>
+			</li>
+			<li class="pc_feedBack" ng-click="toFeedBack()">
+				<i class="pc_opinion"></i>
+				<span>意见反馈</span>
+			</li>
+		</ul>
+	</div>
+</div>
